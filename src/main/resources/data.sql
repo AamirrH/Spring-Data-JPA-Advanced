@@ -8,3 +8,5 @@ VALUES
     ('Sneha Iyer', 'sneha.iyer@gmail.com', 28, 'A_POSITIVE'),
     ('Karan Mehta', 'karan.mehta@gmail.com', 45, 'B_NEGATIVE'),
     ('Pooja Nair', 'pooja.nair@gmail.com', 33, 'AB_NEGATIVE');
+
+
