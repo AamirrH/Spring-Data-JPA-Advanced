@@ -36,5 +36,9 @@ public class InsuranceEntity {
 
     @OneToOne(mappedBy = "insuranceEntity")
     private PatientEntity patient;
+    /* This mappedBy basically prevents from creating another patient id
+    column in the Insurance-Table, because it has already been taken care of
+    in the Patient Table by using the Insurance id as a Foreign Key.
+     */
 
 }

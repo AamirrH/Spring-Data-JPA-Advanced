@@ -23,11 +23,16 @@ public class AppointmentEntity {
     private String reason;
     @Column(nullable = false,length = 20)
     private String status;
-
-    private Long doctor_id;
     @ManyToOne
     @JoinColumn(name = "patient_id")
     private PatientEntity patientEntity;
+    /* We only need to define the Appointment -> Patient Relationship here,
+    One to Many Relationship cannot exist in a database from owning side, instead a Many to one
+    Relatonship Exists from the inverse side.
+     */
+    @ManyToOne
+    @JoinColumn(name = "doctor_id")
+    private DoctorEntity doctorEntity;
 
 
 }
