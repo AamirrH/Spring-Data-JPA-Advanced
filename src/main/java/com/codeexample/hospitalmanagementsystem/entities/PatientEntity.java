@@ -49,6 +49,9 @@ public class PatientEntity {
     useless for them.
      */
 
+    @OneToOne
+    @JoinColumn(name = "patient_insurance", unique = true)
+    private InsuranceEntity insuranceEntity;
 
 
 
